@@ -1,0 +1,34 @@
+{% load static %}
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+    <body>
+        <div class = "banner">
+            <div class="navbar">
+                <ul>
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'about' %}">About</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'projects' %}">Projects</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'music' %}">Music</a>
+                    </li>
+                </ul>
+                
+            </div>
+            <div class = "welcome">
+                <h2>Welcome!<br>You can find out everything about me here</h2>
+            </div>
+            <p>*Sorry if you are viewing this website on mobile phone, I will try to optimize it for mobile phones in future versions</p>
+
+        </div>
+        
+    </body>
+</html>

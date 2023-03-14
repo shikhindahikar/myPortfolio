@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/static/images/blyatshitlalala.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.banner p{
+    position: absolute;
+    left: 1.5%;
+    bottom: 1.5%;
+    font-size: 15px;
+    text-shadow: 1px 1px 2px black, 0 0 1em rgb(86, 86, 255), 0 0 0.2em rgb(62, 62, 255);
+    color: beige;
+}
+
+.navbar{
+    font-weight: 600;
+    width: 90%;
+    margin: auto;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: azure;
+    text-transform: uppercase;
+    
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: cornsilk;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.welcome h2{
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 250%;
+    text-align: center;
+    background-position: center;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 200px;
+    margin: 10px 0;
+    color: rgb(56, 77, 196);
+    opacity: 0.77;
+    transition: 350ms;
+}
+
+.welcome h2:hover{
+    font-size: 50px;
+    font-size-adjust: 10px;
+}
+
+.banner_about{
+    width: 60%;
+    height: 100%;
+    background-image: url(/static/images/wall.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar_about{
+    position: absolute;
+    left: 5%;
+    font-weight: 600;
+    width: 90%;
+    margin: auto;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.navbar_about ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+
+}
+
+.navbar_about ul li a{
+    text-decoration: none;
+    color: azure;
+    text-transform: uppercase;
+}
+
+.navbar_about ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: cornsilk;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.navbar_about ul li:hover::after{
+    width: 100%;
+}
+
+.info{
+    position: absolute;
+    text-align: center;
+    top: 15%;
+    left: 65%;
+    padding-right: 60px;
+}
+
+.info h2{
+    color: rgb(226, 78, 78);
+    text-decoration-color: red;
+    font-weight: bold;
+}
+
+.info p{
+    font-family: cursive;
+    color: rgb(255, 255, 255);
+    text-shadow: 1.2px 1.2px rgb(22, 146, 146);
+}
+
+.banner_projects{
+    width: 100%;
+    height: 100%;
+    background-image: url(/static/images/star.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.banner_projects .transbox{
+    background-color: rgb(223, 222, 222);
+    position: absolute;
+    border: 0.5px solid azure;
+    opacity: 0.4;
+    resize: none;
+    overflow: auto;
+    width: 59.5%;
+    height: 95%;
+    bottom: 10px;
+    right: 10px;
+}
+
+.banner_projects .transbox h2{
+    position: absolute;
+    left: 20px;
+    top: 15px;
+}
+
+.banner_projects .desc{
+    width: 55%;
+    text-align: left;
+    position: absolute;
+    right: 24px;
+    bottom: 20%;
+    font-size: bolder;
+}
+
+.bottom-text {
+    position: absolute;
+    left: 20px;
+    top: 96%;
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+.banner_projects img{
+    width: 26%;
+    height: 50%;
+    position: absolute;
+    left: 5%;
+    top: 25%;
+}
+
+.banner_projects img:hover{
+    width: 26.2%;
+    height: 50.2%;
+}
+
+.banner_music{
+    width: 100%;
+    height: 100%;
+    background-image: url(/static/images/concert.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.text p{
+    color: blanchedalmond;
+    text-shadow: rgb(10, 3, 0) 1px 0 10px;
+    font-size: 18px;
+    text-align: left;
+    padding: 50px;
+    position: absolute;
+    top: 35%;
+}
+
+.text h2{
+    text-align: center;
+    font-size: 5.5em;
+    color: #fff;
+    letter-spacing: -7px;
+    font-weight: 700;
+    text-transform: uppercase;
+    animation: blur 3s ease-out 2;
+    text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+
+}
+
+@keyframes blur {
+    from {
+      text-shadow:0px 0px 10px #fff,
+        0px 0px 10px #fff, 
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 50px #fff,
+        0px 0px 50px #fff,
+        0px 0px 50px #7B96B8,
+        0px 0px 150px #7B96B8,
+        0px 10px 100px #7B96B8,
+        0px 10px 100px #7B96B8,
+        0px 10px 100px #7B96B8,
+        0px 10px 100px #7B96B8,
+        0px -10px 100px #7B96B8,
+        0px -10px 100px #7B96B8;
+    }
+}
+
+.fa {
+    padding: 15px;
+    font-size: 30px;
+    width: 18px;
+    text-align: center;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-instagram {
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    color: white;
+}
+
+.fa-soundcloud {
+    background: rgb(255, 85, 23);
+    color: white;
+}
+
+.fa-spotify {
+    background: #1ED761;
+    color: black;
+}
+
+.fa-linkedin{
+    background: #413eff;
+    margin: 10px;
+    color: white;
+}
+
+.fa-google{
+    background: #d34836;
+    margin: 10px;
+    color: white;
+}
+
+.right p{
+    font-weight: bolder;
+    font-style: italic;
+    color: rgb(0, 124, 124);
+}
+
+.links{
+    position: absolute;
+    left: 88%;
+    top: 90%;
+}
+
+.right{
+    position: absolute;
+    left: 75%;
+    bottom: 10%;
+}

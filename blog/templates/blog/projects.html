@@ -1,0 +1,47 @@
+{% load static %}
+<html>  
+    <head>
+        <title>Projects</title>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+    <body>
+        <div class="banner_projects">
+            <a href="https://github.com/shikhindahikar?tab=repositories" target="_blank"><img src="{% static 'images/git.png' %}" alt=""></a>
+            <div class="navbar">
+                <ul>
+                    <li>
+                        <a href="{% url 'home' %}">Home</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'about' %}">About</a>
+                    </li>
+                    <li>
+                        <a href="">Projects</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'music' %}">Music</a>
+                    </li>
+                </ul>
+                
+            </div>
+            
+            <div class="transbox">
+                <h2>Some of my projects that I am proud of...</h2><br><br>
+                <p class="bottom-text">*All projects can be found on my GitHub profile by clicking on the GitHub logo on left</p>
+            </div>
+            <div class="desc">
+                <ul>
+                    <li><b>ASCII art: </b></li><br>
+                    <p>ASCII art is a graphic design technique that uses computers to generate pictures pieced together using 95 printable ASCII standard characters. This was very exciting project for me as I was able to take almost any normal image and convert it into its equivalent ASCII art. I used Python with an image processing library known as Pillow to process the pixels in the images and convert them to ASCII value according to a simple algorithm.</p>
+                    <br><br>
+                    <li><b>CHIP-8: </b></li><br>
+                    <p>CHIP-8 is an interpreted programming language, developed to make video games to be  more easily programmed. Historically this language would run on <em>COSMAC VIP</em> and <em>Telmac 1800</em> 8-bit microcomputers from mid 1970s. Nowadays these machines have become redundant or lost in time, so only way we can now run this language is on CHIP-8 virtual machine or an emulator. Using C++ and a little SDL, I have created this emulator on my very own windows PC. I have used knowledge of computer architecture and reading the CHIP-8 manual, created the virtualization of hardware. Now using this we can run all the games that CHIP-8 could run. This was kind of difficult project and took lot of help to create, but in the end was worth it! </p>
+                    <br><br>
+                    <li><b>Reddit bot: </b></li><br>
+                    <p>This project came into inception when I replied to a reddit post asking for developers to work on a project. This was reddit bot for the subreddit for public coin grading called r/RedditCoinGrading. Had realfun doing this while working with the subreddit mods and understanding their requirements for the bot. Used PRAW Python library for reddit to connect and read and write public comments. This bot was used to process the all commented grades in a post and process them to fetch an average grade and then print it with further info and message.</p>
+                </ul>
+            </div>
+        </div>
+        
+    </body>  
+</html>
