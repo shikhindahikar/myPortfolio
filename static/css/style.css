@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    scroll-behavior: smooth;
 }
 
 .banner {
@@ -63,31 +64,47 @@
 }
 
 .welcome h2{
-    font-family: sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bolder;
-    font-size: 250%;
-    text-align: center;
+    font-size: 380%;
+    text-align: right;
+    text-shadow: 2px 2px 6px #525252;
     background-position: center;
-    padding-right: 50px;
-    padding-left: 50px;
-    padding-top: 200px;
+    position: relative;
+    top: 55px;
+    right: 60px;
     margin: 10px 0;
-    color: rgb(56, 77, 196);
-    opacity: 0.77;
-    transition: 350ms;
+    color: rgb(255, 255, 255);
+    opacity: 0.88;
 }
 
-.welcome h2:hover{
-    font-size: 50px;
-    font-size-adjust: 10px;
+.welcome p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+    font-size: 150%;
+    text-align: right;
+    text-shadow: 2px 2px 6px #525252;
+    background-position: center;
+    position: relative;
+    top: 100px;
+    right: 300px;
+    margin: 10px 80px;
+    color: rgb(255, 255, 255);
+    opacity: 0.85;
+}
+
+.about_bg{
+    background-image: url(/static/images/light-tones.png);
 }
 
 .banner_about{
     width: 60%;
     height: 100%;
     background-image: url(/static/images/wall.jpg);
+    background-color: black;
     background-size: cover;
     background-position: center;
+    box-shadow: -10px 0 12px -2px rgb(253,245,226) inset;
 }
 
 .navbar_about{
@@ -135,7 +152,7 @@
 .info{
     position: absolute;
     text-align: center;
-    top: 15%;
+    top: 120%;
     left: 65%;
     padding-right: 60px;
 }
@@ -144,20 +161,28 @@
     color: rgb(226, 78, 78);
     text-decoration-color: red;
     font-weight: bold;
+    text-shadow: 2px 2px 1.2px rgb(255, 255, 255);
 }
 
 .info p{
-    font-family: cursive;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: rgb(255, 255, 255);
-    text-shadow: 1.2px 1.2px rgb(22, 146, 146);
+    text-shadow: 1.2px 0.05px 2px rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: large;
 }
 
 .banner_projects{
     width: 100%;
     height: 100%;
+    position: absolute;
+    top: 200%;
     background-image: url(/static/images/star.jpg);
     background-size: cover;
     background-position: center;
+    -webkit-box-shadow: 0 8px 6px -6px rgb(255, 130, 28);
+    -moz-box-shadow: 0 8px 6px -6px rgb(255, 130, 28);
+    box-shadow: 0 8px 6px -0.5px rgb(71, 35, 5);
 }
 
 .banner_projects .transbox{
@@ -212,19 +237,11 @@
 .banner_music{
     width: 100%;
     height: 100%;
+    position: absolute;
+    top: 300%;
     background-image: url(/static/images/concert.jpg);
     background-size: cover;
     background-position: center;
-}
-
-.text p{
-    color: blanchedalmond;
-    text-shadow: rgb(10, 3, 0) 1px 0 10px;
-    font-size: 18px;
-    text-align: left;
-    padding: 50px;
-    position: absolute;
-    top: 35%;
 }
 
 .text h2{
@@ -237,29 +254,6 @@
     animation: blur 3s ease-out 2;
     text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
 
-}
-
-@keyframes blur {
-    from {
-      text-shadow:0px 0px 10px #fff,
-        0px 0px 10px #fff, 
-        0px 0px 25px #fff,
-        0px 0px 25px #fff,
-        0px 0px 25px #fff,
-        0px 0px 25px #fff,
-        0px 0px 25px #fff,
-        0px 0px 25px #fff,
-        0px 0px 50px #fff,
-        0px 0px 50px #fff,
-        0px 0px 50px #7B96B8,
-        0px 0px 150px #7B96B8,
-        0px 10px 100px #7B96B8,
-        0px 10px 100px #7B96B8,
-        0px 10px 100px #7B96B8,
-        0px 10px 100px #7B96B8,
-        0px -10px 100px #7B96B8,
-        0px -10px 100px #7B96B8;
-    }
 }
 
 .fa {
@@ -290,6 +284,16 @@
     color: black;
 }
 
+.about_contact {
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 75%;
+    top: 160%;
+    text-shadow: 1.2px 0.05px 2px rgb(255, 199, 94);
+    font-size: large;
+}
+
 .fa-linkedin{
     background: #413eff;
     margin: 10px;
@@ -302,20 +306,8 @@
     color: white;
 }
 
-.right p{
-    font-weight: bolder;
-    font-style: italic;
-    color: rgb(0, 124, 124);
-}
-
 .links{
     position: absolute;
     left: 88%;
     top: 90%;
-}
-
-.right{
-    position: absolute;
-    left: 75%;
-    bottom: 10%;
 }
