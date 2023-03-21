@@ -209,7 +209,7 @@
     text-align: left;
     position: absolute;
     right: 24px;
-    bottom: 20%;
+    bottom: 40%;
     font-size: bolder;
 }
 
@@ -233,6 +233,25 @@
     width: 26.2%;
     height: 50.2%;
 }
+
+.list-item {
+    display: flex;
+    font-weight: bold;
+    color: #3e5eff;
+    flex-direction: row;
+    text-shadow: 1px 0.05px 3px rgb(255, 255, 255);
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.item-description {
+    color: #1d1d1d;
+    flex-grow: 1;
+    margin-left: 20px;
+  }
 
 .banner_music{
     width: 100%;
@@ -284,6 +303,43 @@
     color: black;
 }
 
+/* resume button */
+.resume-button {
+    background: #ffad42;
+    border: 1px solid #ffad42;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-height: 40px;
+    outline: 0;
+    padding: 12px 14px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+  }
+  
+.resume-button:hover,
+.resume-button:active {
+    background-color: initial;
+    background-position: 0 0;
+    /* color: #FF4742; */
+}
+
+.resume-button:active {
+    opacity: .5;
+}
+
 .about_contact {
     font-weight: bolder;
     color: rgb(255, 255, 255);
@@ -294,20 +350,53 @@
     font-size: large;
 }
 
-.fa-linkedin{
-    background: #413eff;
-    margin: 10px;
-    color: white;
+.about_contact ul{
+    list-style-type: none;
+    margin: 0 20px;
+    /* position: relative; */
+    text-decoration: none;
+    color: rgb(255, 199, 94);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5%;
 }
 
-.fa-google{
-    background: #d34836;
-    margin: 10px;
-    color: white;
+.about_contact a{
+    list-style-type: none;
+    margin: 0 10px;
+    text-decoration: none;
+    color: rgb(255, 199, 94);
+    display: flex;
+    align-items: center;
+    transition: .3s;
+    margin: 5%;
 }
 
-.links{
-    position: absolute;
-    left: 88%;
-    top: 90%;
+.about_contact a:hover{
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
 }
+
+.gmail{
+    position: relative;
+}
+
+.linkedin{
+    position: relative;
+}
+
+.about_contact ul li{
+    display: inline;
+}
+
+.links li{
+    position: relative;
+    display: inline;
+    float: left;
+    margin: 0 200px;
+    bottom: 10%;
+    list-style-type: none;
+    left: 16%;
+}
+

@@ -1,10 +1,7 @@
-{% load static %}
 <html>
     <head>
         <title>Shikhin Dahikar</title>
         {% load static %}
-        <link href="{% static 'css/bootstrap.min.css' %}" >  
-        <script src="{% static 'bootstrap.min.js' %}"></script> 
         <link rel="stylesheet" href="{% static 'css/style.css' %}">
     </head>
     <body>
@@ -50,9 +47,17 @@
                     </ul>  
                 </div>    
                 <div class="about_contact">
-                    <p>Contact me at: </p><br>
-                    <a href="mailto:shikhindah@gmail.com" target="_blank" class="fa fa-google"></a>
-                    <a href="https://www.linkedin.com/in/shikhin-d-8421a2138/" target="_blank" class="fa fa-linkedin"></a>
+                    <h3>Contact me at: </h3><br>
+                    <ul>
+                        <li>
+                            <a href="mailto:shikhindah@gmail.com" target="_blank" class="gmail"><img src="{% static 'images/gmail.png' %}"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/shikhin-d-8421a2138/" target="_blank" class="linkedin"><img src="{% static 'images/linkedin.png' %}"></a>
+                        </li>
+                    </ul>
+                    <br><br>
+                    <a href="{% static 'Resume.pdf' %}" download><button class="resume-button" role="button">Download my resume?</button></a>
                 </div>
 
             </div>
@@ -86,11 +91,17 @@
             <div class="text">
                 <h2>Everything music</h2><br>
             </div>
-            <div class="links">
+            <ul class="links">
+                <li>
                 <a href="https://open.spotify.com/user/ac7ypqsmsfmwik2f23sboswwx" target="_blank" class="fa fa-spotify"></a>
+                </li>    
+                <li>
                 <a href="https://soundcloud.com/user-313179783" target="_blank" class="fa fa-soundcloud"></a>
+                </li>
+                <li>
                 <a href="https://www.instagram.com/7fake_tourist/" target="_blank" class="fa fa-instagram"></a>
-            </div>
+                </li>
+            </ul>
         </div>
         <div class="banner_projects" id="projects">
             <a href="https://github.com/shikhindahikar?tab=repositories" target="_blank"><img src="{% static 'images/git.png' %}" alt=""></a>
@@ -117,16 +128,14 @@
                 <p class="bottom-text">*All projects can be found on my GitHub profile by clicking on the GitHub logo on left</p>
             </div>
             <div class="desc">
-                <ul>
-                    <li><b>ASCII art: </b></li><br>
-                    <p>ASCII art is a graphic design technique that uses computers to generate pictures pieced together using 95 printable ASCII standard characters. This was very exciting project for me as I was able to take almost any normal image and convert it into its equivalent ASCII art. I used Python with an image processing library known as Pillow to process the pixels in the images and convert them to ASCII value according to a simple algorithm.</p>
-                    <br><br>
-                    <li><b>CHIP-8: </b></li><br>
-                    <p>CHIP-8 is an interpreted programming language, developed to make video games to be  more easily programmed. Historically this language would run on <em>COSMAC VIP</em> and <em>Telmac 1800</em> 8-bit microcomputers from mid 1970s. Nowadays these machines have become redundant or lost in time, so only way we can now run this language is on CHIP-8 virtual machine or an emulator. Using C++ and a little SDL, I have created this emulator on my very own windows PC. I have used knowledge of computer architecture and reading the CHIP-8 manual, created the virtualization of hardware. Now using this we can run all the games that CHIP-8 could run. This was kind of difficult project and took lot of help to create, but in the end was worth it! </p>
-                    <br><br>
-                    <li><b>Reddit bot: </b></li><br>
-                    <p>This project came into inception when I replied to a reddit post asking for developers to work on a project. This was reddit bot for the subreddit for public coin grading called r/RedditCoinGrading. Had realfun doing this while working with the subreddit mods and understanding their requirements for the bot. Used PRAW Python library for reddit to connect and read and write public comments. This bot was used to process the all commented grades in a post and process them to fetch an average grade and then print it with further info and message.</p>
-                </ul>
+                <div class="list-item">ASCII art:</div><br>
+                <div class="item-description"><p>I used Python with an image processing library known as Pillow to process the pixels in the images and convert them to ASCII value according to a simple algorithm.</p></div>
+                <br><br>
+                <div class="list-item">CHIP-8:</div><br>
+                <div class="item-description"><p>Using C++, computer architecture knowledge and a little SDL, I created CHIP-8 emulator on my very own windows PC.</p></div>
+                <br><br>
+                <div class="list-item">Reddit bot:</div><br>
+                <div class="item-description"><p>Used PRAW Python library for reddit to connect and read and write public comments.</p></div>
             </div>
         </div>
     </body>
