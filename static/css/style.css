@@ -24,6 +24,7 @@
 
 .navbar{
     font-weight: 600;
+    font-size: large;
     width: 90%;
     margin: auto;
     padding: 50px 0;
@@ -38,6 +39,7 @@
     display: inline-block;
     margin: 0 20px;
     position: relative;
+    text-shadow: 2px 2px 1.2px rgb(0, 0, 0);
 
 }
 
@@ -75,7 +77,7 @@
     right: 60px;
     margin: 10px 0;
     color: rgb(255, 255, 255);
-    opacity: 0.88;
+    /* opacity: 0.88; */
 }
 
 .welcome p{
@@ -90,11 +92,11 @@
     right: 300px;
     margin: 10px 80px;
     color: rgb(255, 255, 255);
-    opacity: 0.85;
+    /* opacity: 0.85; */
 }
 
 .about_bg{
-    background-image: url(/static/images/light-tones.png);
+    background-color: rgb(253,245,226);
 }
 
 .banner_about{
@@ -111,6 +113,7 @@
     position: absolute;
     left: 5%;
     font-weight: 600;
+    font-size: large;
     width: 90%;
     margin: auto;
     padding: 50px 0;
@@ -132,6 +135,7 @@
     text-decoration: none;
     color: azure;
     text-transform: uppercase;
+    text-shadow: 2px 2px 1.2px rgb(0, 0, 0);
 }
 
 .navbar_about ul li::after{
@@ -149,27 +153,62 @@
     width: 100%;
 }
 
-.info{
-    position: absolute;
+.about_contact {
     text-align: center;
-    top: 120%;
+    color: rgb(95, 95, 95);
+    position: absolute;
+    width: 600px;
     left: 65%;
-    padding-right: 60px;
+    top: 115%;
+    font-size: large;
 }
 
-.info h2{
+.about_contact h2{
     color: rgb(226, 78, 78);
     text-decoration-color: red;
     font-weight: bold;
     text-shadow: 2px 2px 1.2px rgb(255, 255, 255);
 }
 
-.info p{
+.about_contact p{
+    margin-bottom: 200px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: rgb(255, 255, 255);
-    text-shadow: 1.2px 0.05px 2px rgb(0, 0, 0);
-    font-weight: bold;
+    color: rgb(59, 59, 59);
     font-size: large;
+}
+
+.about_contact ul{
+    list-style-type: none;
+    text-decoration: none;
+    color: rgb(255, 199, 94);
+    display: flex;
+    align-items: center;
+}
+
+.about_contact ul li{
+    margin-left: 30%;
+    /* margin: 0 5px; */
+}
+
+.about_contact a button:hover{
+    color: rgb(255, 199, 94);
+    text-align: center;
+}
+
+.about_contact a{
+    padding-left: 28%;
+    list-style-type: none;
+    margin: 0 10px;
+    text-decoration: none;
+    color: rgb(255, 199, 94);
+    display: flex;
+    transition: .3s;
+    margin: 5%;
+}
+
+.about_contact a:hover{
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
 }
 
 .banner_projects{
@@ -198,7 +237,7 @@
     right: 10px;
 }
 
-.banner_projects .transbox h2{
+.banner_projects .transbox h1{
     position: absolute;
     left: 20px;
     top: 15px;
@@ -237,9 +276,9 @@
 .list-item {
     display: flex;
     font-weight: bold;
-    color: #3e5eff;
+    color: #ffffff;
     flex-direction: row;
-    text-shadow: 1px 0.05px 3px rgb(255, 255, 255);
+    text-shadow: 0 0px 3px rgb(66, 141, 255);
     justify-content: space-between;
     align-items: center;
     width: 80%;
@@ -273,34 +312,6 @@
     animation: blur 3s ease-out 2;
     text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
 
-}
-
-.fa {
-    padding: 15px;
-    font-size: 30px;
-    width: 18px;
-    text-align: center;
-    border-radius: 50%;
-    text-decoration: none;
-}
-
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-instagram {
-    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
-    color: white;
-}
-
-.fa-soundcloud {
-    background: rgb(255, 85, 23);
-    color: white;
-}
-
-.fa-spotify {
-    background: #1ED761;
-    color: black;
 }
 
 /* resume button */
@@ -340,44 +351,6 @@
     opacity: .5;
 }
 
-.about_contact {
-    font-weight: bolder;
-    color: rgb(255, 255, 255);
-    position: absolute;
-    left: 75%;
-    top: 160%;
-    text-shadow: 1.2px 0.05px 2px rgb(255, 199, 94);
-    font-size: large;
-}
-
-.about_contact ul{
-    list-style-type: none;
-    margin: 0 20px;
-    /* position: relative; */
-    text-decoration: none;
-    color: rgb(255, 199, 94);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 5%;
-}
-
-.about_contact a{
-    list-style-type: none;
-    margin: 0 10px;
-    text-decoration: none;
-    color: rgb(255, 199, 94);
-    display: flex;
-    align-items: center;
-    transition: .3s;
-    margin: 5%;
-}
-
-.about_contact a:hover{
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3);
-}
-
 .gmail{
     position: relative;
 }
@@ -394,9 +367,18 @@
     position: relative;
     display: inline;
     float: left;
-    margin: 0 200px;
+    margin: 0 100px;
     bottom: 10%;
     list-style-type: none;
-    left: 16%;
+    left: 10%;
 }
 
+.links li a{
+    opacity: 0.7;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.links li a:hover{
+    opacity: 1;
+}
