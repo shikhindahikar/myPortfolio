@@ -94,6 +94,7 @@
     box-shadow: -10px 0 12px -2px rgb(253,245,226) inset;
 }
 
+/* correcting the navbar position to align with other section navbars */
 .about_bg ul{
     position: absolute;
     padding-top: 15px;
@@ -125,6 +126,9 @@
 }
 
 .about_contact ul{
+    position: absolute;
+    /* adding to correct the gmail and linkedin button positions */
+    left: 180px;
     list-style-type: none;
     text-decoration: none;
     color: rgb(255, 199, 94);
