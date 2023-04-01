@@ -1,11 +1,13 @@
 <html>
     <head>
         <title>Shikhin Dahikar</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         {% load static %}
         <link rel="stylesheet" href="{% static 'css/style.css' %}">
     </head>
     <body>
-        <div class = "banner" id="home">
+        <div class="body_class">
             <div class="navbar">
                 <ul>
                     <li>
@@ -21,121 +23,71 @@
                         <a href="#music">Music</a>
                     </li>
                 </ul>
-                
             </div>
-            <div class = "welcome">
-                <h2>Hi! my name is Shikhin <br>A Software Engineer,<br> Musician, and a foodie.</h2>
-                <p> To know more about me<br> click on the links at top left</p>
+            <div class = "banner" id="home">
+                <div class = "welcome">
+                    <h2>Hi! my name is Shikhin <br>A Software Engineer,<br> Musician, and a foodie.</h2>
+                    <p> To know more about me<br> click on the links at top left</p>
+                </div>
             </div>
-        </div>
-        <div class="about_bg" id="about">
-            <div class="navbar">
-                <ul>
-                    <li>
-                        <a href="#home">Home</a>
-                    </li>
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="#projects">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#music">Music</a>
-                    </li>
-                </ul>  
+            <div class="about_bg" id="about">
+                <div class="about_contact">
+                    <h2>Who am I?</h2><br>
+                    <p>Born and raised in the orange city of India, Nagpur.
+                        Graduated with Bachelor of Technology in Computer Science and Engineering from Visvesvaraya National
+                        Institute of Technology(or VNIT, or NIT), Nagpur.<br><br>Ever since I was a kid, I always had a curiousity
+                        towards softwares and computers. Now that I know a thing or two about making them, I am excited to
+                        contribute to the industry and to the people, using the skills that I have acquired.<br><br></p>
+                    <h3>Contact me at: </h3><br>
+                    <ul>
+                        <li>
+                            <a href="mailto:shikhindah@gmail.com" target="_blank" class="gmail"><img src="{% static 'images/gmail.png' %}"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/shikhin-d-8421a2138/" target="_blank" class="linkedin"><img src="{% static 'images/linkedin.png' %}"></a>
+                        </li>
+                    </ul>
+                    <br><br>
+                    <a href="{% static 'Resume.pdf' %}" download><button class="resume-button" role="button">Download my resume</button></a>
+                </div>
             </div>
-            <div class="about_contact">
-                <h2>Who am I?</h2><br>
-                <p>Born and raised in the orange city of India, Nagpur.
-                    Graduated with Bachelor of Technology in Computer Science and Engineering from Visvesvaraya National
-                    Institute of Technology(or VNIT, or NIT), Nagpur.<br><br>Ever since I was a kid, I always had a curiousity
-                    towards softwares and computers. Now that I know a thing or two about making them, I am excited to
-                    contribute to the industry and to the people, using the skills that I have acquired.<br><br></p>
-                <h3>Contact me at: </h3><br>
-                <ul>
+            <div class="banner_music" id="music">
+                <div class="text">
+                    <h2>Everything music</h2><br>
+                </div>
+                <ul class="links">
                     <li>
-                        <a href="mailto:shikhindah@gmail.com" target="_blank" class="gmail"><img src="{% static 'images/gmail.png' %}"></a>
+                        <h3 style="color: aliceblue;">Listen to my album here</h3>
+                        <br>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/7D1MEFEczVyOsuCrGkpML1?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/in/shikhin-d-8421a2138/" target="_blank" class="linkedin"><img src="{% static 'images/linkedin.png' %}"></a>
+                        <h3 style="color: aliceblue;">My SoundCloud</h3>
+                        <br>
+                        <iframe style="border-radius:12px" width="100%" height="352" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/957594928&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/fake_tourist" title="fake_tourist" target="_blank" style="color: #cccccc; text-decoration: none;">fake_tourist</a> · <a href="https://soundcloud.com/fake_tourist/peace-out" title="Peace Out" target="_blank" style="color: #cccccc; text-decoration: none;">Peace Out</a></div>
+                    </li>
+                    <li>
+                        <a href="https://linktr.ee/fake_tourist" target="_blank"><h2 style="color: aliceblue;">And a Linktree for <br>rest of the links</h2></a>
+                        <br>
                     </li>
                 </ul>
-                <br><br>
-                <a href="{% static 'Resume.pdf' %}" download><button class="resume-button" role="button">Download my resume</button></a>
             </div>
-        </div>
-        <div class="banner_music" id="music">
-            <div class="navbar">
-                <ul>
-                    <li>
-                        <a href="#home">Home</a>
-                    </li>
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="#projects">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#music">Music</a>
-                    </li>
-                </ul>
-                
-            </div>
-            <div class="text">
-                <h2>Everything music</h2><br>
-            </div>
-            <ul class="links">
-                <li>
-                    <h3 style="color: aliceblue;">Listen to my album here</h3>
-                    <br>
-                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/7D1MEFEczVyOsuCrGkpML1?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                </li>
-                <li>
-                    <h3 style="color: aliceblue;">My SoundCloud</h3>
-                    <br>
-                    <iframe style="border-radius:12px" width="100%" height="352" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/957594928&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/fake_tourist" title="fake_tourist" target="_blank" style="color: #cccccc; text-decoration: none;">fake_tourist</a> · <a href="https://soundcloud.com/fake_tourist/peace-out" title="Peace Out" target="_blank" style="color: #cccccc; text-decoration: none;">Peace Out</a></div>
-                </li>
-                <li>
-                    <a href="https://linktr.ee/fake_tourist" target="_blank"><h2 style="color: aliceblue;">And a Linktree for <br>rest of the links</h2></a>
-                    <br>
-                </li>
-            </ul>
-        </div>
-        <div class="banner_projects" id="projects">
-            <a href="https://github.com/shikhindahikar?tab=repositories" target="_blank"><img src="{% static 'images/git.png' %}" alt=""></a>
-            <div class="navbar">
-                <ul>
-                    <li>
-                        <a href="#home">Home</a>
-                    </li>
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="#projects">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#music">Music</a>
-                    </li>
-                </ul>
-                
-            </div>
-            
-            <div class="transbox">
-                <h1>Some of my projects that I am proud of...</h1><br><br>
-                <p class="bottom-text">*All projects can be found on my GitHub profile by clicking on the GitHub logo on left</p>
-            </div>
-            <div class="desc">
-                <div class="list-item">ASCII art:</div><br>
-                <div class="item-description"><p>I used Python with an image processing library known as Pillow to process the pixels in the images and convert them to ASCII value according to a simple algorithm.</p></div>
-                <br><br>
-                <div class="list-item">CHIP-8:</div><br>
-                <div class="item-description"><p>Using C++, computer architecture knowledge and a little SDL, I created CHIP-8 emulator on my very own windows PC.</p></div>
-                <br><br>
-                <div class="list-item">Reddit bot:</div><br>
-                <div class="item-description"><p>Used PRAW Python library for reddit to connect and read and write public comments.</p></div>
+            <div class="banner_projects" id="projects">
+                <a href="https://github.com/shikhindahikar?tab=repositories" target="_blank"><img src="{% static 'images/git.png' %}" alt=""></a>
+                <div class="transbox">
+                    <h1>Some of my projects that I am proud of...</h1><br><br>
+                    <p class="bottom-text">*All projects can be found on my GitHub profile by clicking on the GitHub logo on left</p>
+                </div>
+                <div class="desc">
+                    <div class="list-item">ASCII art:</div><br>
+                    <div class="item-description"><p>I used Python with an image processing library known as Pillow to process the pixels in the images and convert them to ASCII value according to a simple algorithm.</p></div>
+                    <br><br>
+                    <div class="list-item">CHIP-8:</div><br>
+                    <div class="item-description"><p>Using C++, computer architecture knowledge and a little SDL, I created CHIP-8 emulator on my very own windows PC.</p></div>
+                    <br><br>
+                    <div class="list-item">Reddit bot:</div><br>
+                    <div class="item-description"><p>Used PRAW Python library for reddit to connect and read and write public comments.</p></div>
+                </div>
             </div>
         </div>
     </body>
