@@ -104,7 +104,6 @@
     top: 100%;
     height: auto;
     min-height: 100%;
-    /* background-image: url(/static/images/wall.jpg); */
     background-size: cover;
     background-position: center;
     box-shadow: -10px 0 12px -2px rgb(253,245,226) inset;
@@ -147,6 +146,7 @@
 
 .about_contact ul li{
     margin-left: 5vw;
+    margin-right: 5vw;
     padding: 5vh;
 }
 
@@ -349,7 +349,6 @@
     height: 10vh;
     position: relative;
     display: inline;
-    float: left;
     list-style-type: none;
     align-items: center;
 }
@@ -376,4 +375,66 @@ iframe {
 
 .links li a:hover{
     opacity: 1;
+}
+
+/* Desktops */
+@media (min-width: 1200px) {
+    .body_class {
+      height: 120px;
+    }
+
+    .about_bg {
+        position: absolute;
+        left: 0%;
+        width: 60%;
+        background-image: url(/static/images/wall.jpg);
+    }
+
+    .about_contact {
+        max-width: 60%;
+        position: absolute;
+        left: 100%;
+    }
+
+    .banner_projects .transbox {
+        width: 60%;
+        height: 80%;
+        margin-top: 10vh;
+        margin-bottom: 5vh;
+    }
+
+    .banner_projects .transbox h1 {
+        margin-left: 1vw;
+        margin-top: 5vh;
+        font-size: larger;
+    }
+
+    .banner_projects img {
+        right: 5vw;
+        top: 25vh;
+    }
+
+    .banner_music {
+        display: table;
+    }
+
+    .banner_music .text {
+        font-size: x-large;
+    }
+
+    .banner_music .links li {
+        float: left;
+        list-style-type: none;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .banner_music h3 {
+        font-size: large;
+    }
+
+    .banner_music .links iframe {
+        width: 100%;
+        height: max-content;
+    }
 }
