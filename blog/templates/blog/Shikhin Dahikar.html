@@ -26,8 +26,8 @@
             </div>
             <div class = "banner" id="home">
                 <div class = "welcome">
-                    <h2>Hi! my name is Shikhin <br>A Software Engineer,<br> Musician, and a foodie.</h2>
-                    <p> To know more about me<br> click on the links at top left</p>
+                    <h2>Hi! My name is Shikhin <br>A Software Engineer,<br> Musician, and a foodie.</h2>
+                    <p>To know more about me<br> click on the links at top</p>
                 </div>
             </div>
             <div class="about_bg" id="about">
@@ -46,8 +46,8 @@
                         <li>
                             <a href="https://www.linkedin.com/in/shikhin-d-8421a2138/" target="_blank" class="linkedin"><img src="{% static 'images/linkedin.png' %}"></a>
                         </li>
+                        <br><br>
                     </ul>
-                    <br><br>
                     <a href="{% static 'Resume.pdf' %}" download><button class="resume-button" role="button">Download my resume</button></a>
                 </div>
             </div>
@@ -73,21 +73,21 @@
                 </ul>
             </div>
             <div class="banner_projects" id="projects">
-                <a href="https://github.com/shikhindahikar?tab=repositories" target="_blank"><img src="{% static 'images/git.png' %}" alt=""></a>
                 <div class="transbox">
                     <h1>Some of my projects that I am proud of...</h1><br><br>
-                    <p class="bottom-text">*All projects can be found on my GitHub profile by clicking on the GitHub logo on left</p>
+                    <p class="bottom-text">*All projects can be found on my GitHub profile by clicking on the GitHub logo</p>
+                    <div class="desc">
+                        <div class="list-item">ASCII art:</div><br>
+                        <div class="item-description"><p>I used Python with an image processing library known as Pillow to process the pixels in the images and convert them to ASCII value according to a simple algorithm.</p></div>
+                        <br><br>
+                        <div class="list-item">CHIP-8:</div><br>
+                        <div class="item-description"><p>Using C++, computer architecture knowledge and a little SDL, I created CHIP-8 emulator on my very own windows PC.</p></div>
+                        <br><br>
+                        <div class="list-item">Reddit bot:</div><br>
+                        <div class="item-description"><p>Used PRAW Python library for reddit to connect and read and write public comments.</p></div>
+                    </div>
                 </div>
-                <div class="desc">
-                    <div class="list-item">ASCII art:</div><br>
-                    <div class="item-description"><p>I used Python with an image processing library known as Pillow to process the pixels in the images and convert them to ASCII value according to a simple algorithm.</p></div>
-                    <br><br>
-                    <div class="list-item">CHIP-8:</div><br>
-                    <div class="item-description"><p>Using C++, computer architecture knowledge and a little SDL, I created CHIP-8 emulator on my very own windows PC.</p></div>
-                    <br><br>
-                    <div class="list-item">Reddit bot:</div><br>
-                    <div class="item-description"><p>Used PRAW Python library for reddit to connect and read and write public comments.</p></div>
-                </div>
+                <a href="https://github.com/shikhindahikar?tab=repositories" target="_blank"><img src="{% static 'images/git.png' %}" alt=""></a>
             </div>
         </div>
     </body>

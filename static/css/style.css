@@ -15,7 +15,8 @@
 
 .banner {
     width: 100%;
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     background-image: url(/static/images/blyatshitlalala.jpg);
     object-fit: cover;
     background-size: cover;
@@ -26,7 +27,7 @@
 .navbar{
     z-index: 1;
     font-weight: 600;
-    font-size: large;
+    font-size: small;
     width: 100%;
     margin: auto;
     padding: 10px 0 35px;
@@ -44,7 +45,7 @@
 .navbar ul li{
     list-style: none;
     display: inline-block;
-    margin: 0 20px;
+    margin: 0 10px;
     position: relative;
     text-shadow: 2px 2px 1.2px rgb(0, 0, 0);
 
@@ -75,13 +76,12 @@
 .welcome h2{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bolder;
-    font-size: 380%;
-    text-align: right;
+    font-size: 3vmax;
+    text-align: center;
     text-shadow: 2px 2px 6px #525252;
     background-position: center;
     position: relative;
-    top: 100px;
-    right: 60px;
+    top: 20vh;
     margin: 15px 0;
     color: rgb(255, 255, 255);
 }
@@ -89,48 +89,37 @@
 .welcome p{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bolder;
-    font-size: 150%;
-    text-align: right;
+    font-size: 2vmax;
+    text-align: center;
     text-shadow: 2px 2px 6px #525252;
     background-position: center;
     position: relative;
-    top: 100px;
-    right: 10px;
-    margin: 10px 80px;
+    top: 30vh;
     color: rgb(255, 255, 255);
 }
 
 .about_bg{
     position: absolute;
     background-color: rgb(253,245,226);
-    width: 60%;
     top: 100%;
     height: auto;
     min-height: 100%;
-    background-image: url(/static/images/wall.jpg);
+    /* background-image: url(/static/images/wall.jpg); */
     background-size: cover;
     background-position: center;
     box-shadow: -10px 0 12px -2px rgb(253,245,226) inset;
 }
 
-/* correcting the navbar position to align with other section navbars */
-.about_bg ul{
-    position: absolute;
-    padding-top: 15px;
-    padding-left: 35px;
-}
-
 .about_contact {
-    top: 20%;
-    left: 105%;
+    word-wrap: break-word;
     text-align: center;
     color: rgb(95, 95, 95);
-    position: absolute;
-    width: 600px;
+    width: 100%;
     font-size: large;
 }
 
 .about_contact h2{
+    padding-top: 10vh;
     color: rgb(226, 78, 78);
     text-decoration-color: red;
     font-weight: bold;
@@ -139,27 +128,31 @@
 
 .about_contact p{
     position: relative;
-    margin-bottom: 200px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: rgb(59, 59, 59);
     font-size: large;
+    margin-left: 15px;
+    margin-right: 15px;
     overflow: auto;
 }
 
 .about_contact ul{
-    position: absolute;
-    /* adding to correct the gmail and linkedin button positions */
-    left: 180px;
     list-style-type: none;
     text-decoration: none;
     color: rgb(255, 199, 94);
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
 .about_contact ul li{
-    margin-left: 30%;
-    /* margin: 0 5px; */
+    margin-left: 5vw;
+    padding: 5vh;
+}
+
+.about_contact a button {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .about_contact a button:hover{
@@ -167,134 +160,17 @@
     text-align: center;
 }
 
-.about_contact a{
-    padding-left: 28%;
+.about_contact a {
     list-style-type: none;
-    margin: 0 10px;
     text-decoration: none;
     color: rgb(255, 199, 94);
     display: flex;
     transition: .3s;
-    margin: 5%;
 }
 
 .about_contact a:hover{
     -webkit-transform: scale(1.3);
     transform: scale(1.3);
-}
-
-.banner_projects{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 200%;
-    background-image: url(/static/images/star.jpg);
-    background-size: cover;
-    background-position: center;
-    -webkit-box-shadow: 0 8px 6px -6px rgb(255, 130, 28);
-    -moz-box-shadow: 0 8px 6px -6px rgb(255, 130, 28);
-    box-shadow: 0 8px 6px -0.5px rgb(71, 35, 5);
-}
-
-
-
-.banner_projects .transbox{
-    background-color: rgb(223, 222, 222);
-    position: absolute;
-    border: 0.5px solid azure;
-    opacity: 0.4;
-    resize: none;
-    overflow: auto;
-    width: 59.5%;
-    height: 90%;
-    bottom: 10px;
-    right: 10px;
-}
-
-.banner_projects .transbox h1{
-    position: absolute;
-    left: 20px;
-    top: 15px;
-    overflow: auto;
-}
-
-.banner_projects .desc{
-    width: 55%;
-    text-align: left;
-    position: absolute;
-    right: 24px;
-    bottom: 30%;
-    font-size: bolder;
-    overflow: auto;
-}
-
-.bottom-text {
-    position: absolute;
-    left: 20px;
-    top: 96%;
-    font-size: 12px;
-    font-weight: bolder;
-}
-
-.banner_projects img{
-    max-width: 26%;
-    max-height: 50%;
-    width: auto;
-    height: auto;
-    position: absolute;
-    left: 5%;
-    top: 25%;
-}
-
-.banner_projects img:hover{
-    width: auto;
-    height: auto;
-    max-width: 26.2%;
-    max-height: 50.2%;
-}
-
-.list-item {
-    display: flex;
-    font-weight: bold;
-    color: #ffffff;
-    flex-direction: row;
-    text-shadow: 0 0px 3px rgb(66, 141, 255);
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-    padding: 5px;
-    margin-bottom: 5px;
-}
-
-.item-description {
-    color: #1d1d1d;
-    flex-grow: 1;
-    margin-left: 20px;
-  }
-
-.banner_music{
-    width: 100%;
-    height: auto;
-    min-height: 100%;
-    position: absolute;
-    top: 300%;
-    background-image: url(/static/images/concert.jpg);
-    background-size: cover;
-    background-position: center;
-    object-fit: fill;
-}
-
-.text h2{
-    padding-top: 150px;
-    text-align: center;
-    font-size: 5.5em;
-    color: #fff;
-    letter-spacing: -7px;
-    font-weight: 700;
-    text-transform: uppercase;
-    animation: blur 3s ease-out 2;
-    text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
-
 }
 
 /* resume button */
@@ -327,7 +203,6 @@
 .resume-button:active {
     background-color: initial;
     background-position: 0 0;
-    /* color: #FF4742; */
 }
 
 .resume-button:active {
@@ -346,66 +221,159 @@
     display: inline;
 }
 
-.links li{
+.banner_projects{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 200%;
+    background-image: url(/static/images/star.jpg);
+    background-size: cover;
+    background-position: center;
+    -webkit-box-shadow: 0 8px 6px -6px rgb(255, 130, 28);
+    -moz-box-shadow: 0 8px 6px -6px rgb(255, 130, 28);
+    box-shadow: 0 8px 6px -0.5px rgb(71, 35, 5);
+}
+
+
+
+.banner_projects .transbox{
+    top: 5vh;
+    box-sizing: content-box;
+    background-color: rgb(223, 222, 222);
+    position: absolute;
+    border: 1px solid azure;
+    resize: none;
+    margin: 5vw;
+    width: 90vw;
+    height: 80vh;
+    min-height: 80vh;
+    word-wrap: break-word;
+    overflow: scroll;
+}
+
+.banner_projects .transbox h1{
+    position: absolute;
+    font-size: large;
+    margin-top: 1vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.banner_projects .desc{
+    width: 100%;
+    margin: 1vw;
+    text-align: left;
+    font-size: bolder;
+    overflow: hidden;
+}
+
+.bottom-text {
+    margin-left: 2vw;
+    margin-right: 2vw;
+    position: relative;
+    top: 70vh;
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+.banner_projects img{
+    max-width: 26%;
+    max-height: 50%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    margin-top: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+    top: 85vh;
+}
+
+.banner_projects img:hover{
+    width: auto;
+    height: auto;
+    max-width: 26.5%;
+    max-height: 50.5%;
+}
+
+.list-item {
+    display: flex;
+    font-weight: bold;
+    color: #ffffff;
+    flex-direction: row;
+    text-shadow: 0 0px 3px rgb(66, 141, 255);
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding: 5px;
+}
+
+.item-description {
+    color: #1d1d1d;
+    flex-grow: 1;
+    margin: 5px;
+  }
+
+.banner_music{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 300%;
+    background-image: url(/static/images/concert.jpg);
+    background-size: cover;
+    background-position: center;
+    object-fit: fill;
+    display: block;
+    margin: auto;
+}
+
+.text {
+    padding-top: 10vh;
+    text-align: center;
+    font-size: large;
+    color: #fff;
+    letter-spacing: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    animation: blur 3s ease-out 2;
+    text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+
+}
+
+.links h3 {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    font-size: small;
+}
+
+.links ul li{
+    height: 10vh;
     position: relative;
     display: inline;
     float: left;
-    margin: 0 100px;
-    bottom: 10%;
     list-style-type: none;
-    left: 10%;
+    align-items: center;
+}
+
+iframe {
+    margin-left: 5vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    width: fit-content;
+    align-items: center;
+    height: 25vh;
 }
 
 .links li a{
+    margin-top: 5vh;
     opacity: 0.7;
     text-decoration: none;
     transition: 0.3s;
 }
 
+.links h2 {
+    margin-left: 5vw;
+} 
+
 .links li a:hover{
     opacity: 1;
 }
-
-/* phones */
-@media (max-width: 480px) {
-    * {
-        font-size: small;
-        overflow-x: hidden;
-    }
-
-    .navbar {
-        font-size: medium;
-    }
-
-    .navbar ul li {
-        margin: 0 10px;
-    }
-
-    .about_bg{
-        height: auto;
-    }
-
-    .banner_projects{
-        height: auto;
-    }
-
-    .banner_music{
-        height: auto;
-    }
-
-    .banner{
-        height: auto;
-        font-size: smaller;
-    }
-
-    iframe {
-        width: auto;
-        min-height: max-content;
-        height: auto;
-    }
-}
-
-/* desktop */
-/* @media (min-width: 1200px) {
-    
-} */
