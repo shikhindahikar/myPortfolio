@@ -34,8 +34,7 @@ except KeyError as e:
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["shikhindahikar.com"]
-
+ALLOWED_HOSTS = ["shikhindahikar.com", "www.shikhindahikar.com"]
 
 # Application definition
 
