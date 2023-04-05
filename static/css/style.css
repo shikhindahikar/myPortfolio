@@ -27,7 +27,7 @@
 .navbar{
     z-index: 1;
     font-weight: 600;
-    font-size: small;
+    font-size: 13px;
     width: 100%;
     margin: auto;
     padding: 10px 0 35px;
@@ -78,7 +78,7 @@
     font-weight: bolder;
     font-size: 3vmax;
     text-align: center;
-    text-shadow: 2px 2px 6px #525252;
+    text-shadow: 2px 5px 10px #161616;
     background-position: center;
     position: relative;
     top: 40vh;
@@ -91,7 +91,7 @@
     font-weight: bolder;
     font-size: 2vmax;
     text-align: center;
-    text-shadow: 2px 2px 6px #525252;
+    text-shadow: 2px 5px 10px #000000;
     background-position: center;
     position: relative;
     top: 50vh;
@@ -377,15 +377,88 @@ iframe {
     opacity: 1;
 }
 
-/* Desktops */
-@media (min-width: 1200px) {
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
     .body_class {
       height: 120px;
+    }
+
+    .navbar {
+        font-size: medium;
     }
 
     .about_bg {
         position: absolute;
         left: 0%;
+        top: 101.6%;
+        width: 60%;
+        box-shadow: -10px 10px 12px -2px rgb(253,245,226) inset;
+        background-image: url(/static/images/wall.jpg);
+    }
+
+    .about_contact {
+        max-width: 60%;
+        position: absolute;
+        left: 100%;
+    }
+
+    .banner_projects .transbox {
+        width: 60%;
+        height: 80%;
+        margin-top: 10vh;
+        margin-bottom: 5vh;
+    }
+
+    .banner_projects .transbox h1 {
+        margin-left: 1vw;
+        margin-top: 5vh;
+        font-size: larger;
+    }
+
+    .banner_projects img {
+        right: 5vw;
+        top: 25vh;
+    }
+
+    .banner_music {
+        display: table;
+    }
+
+    .banner_music .text {
+        font-size: x-large;
+    }
+
+    .banner_music .links li {
+        float: left;
+        list-style-type: none;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .banner_music h3 {
+        font-size: large;
+    }
+
+    .banner_music .links iframe {
+        width: 100%;
+        height: max-content;
+    }
+}
+
+/* Desktops */
+@media (min-width: 1025px) {
+    .body_class {
+      height: 120px;
+    }
+
+    .navbar {
+        font-size: medium;
+    }
+
+    .about_bg {
+        position: absolute;
+        left: 0%;
+        top: 101.6%;
         width: 60%;
         background-image: url(/static/images/wall.jpg);
     }
