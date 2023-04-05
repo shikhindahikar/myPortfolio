@@ -387,10 +387,18 @@ iframe {
         font-size: medium;
     }
 
+    .welcome h2 {
+        top: 20vh;
+    }
+
+    .welcome p {
+        top: 30vh;
+    }
+
     .about_bg {
         position: absolute;
         left: 0%;
-        top: 101.6%;
+        top: 101.7%;
         width: 60%;
         box-shadow: -10px 10px 12px -2px rgb(253,245,226) inset;
         background-image: url(/static/images/wall.jpg);
@@ -455,10 +463,18 @@ iframe {
         font-size: medium;
     }
 
+    .welcome h2 {
+        top: 20vh;
+    }
+
+    .welcome p {
+        top: 30vh;
+    }
+
     .about_bg {
         position: absolute;
         left: 0%;
-        top: 101.6%;
+        top: 101.7%;
         width: 60%;
         background-image: url(/static/images/wall.jpg);
     }
