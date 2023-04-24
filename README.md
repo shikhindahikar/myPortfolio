@@ -1,2 +1,2 @@
 # myPortfolio
-My first portfolio. (Needs updating)
+Created in Django with vanilla JS, HTML and CSS.
